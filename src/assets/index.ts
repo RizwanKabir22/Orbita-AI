@@ -6,7 +6,6 @@ import balloon1 from './img/balloon-1.webp';
 import balloon2 from './img/balloon-2.webp';
 import personVoice from './img/person-voice-2.webp';
 import personJoy from './img/person-joy.webp';
-import iphoneFrame from './img/frame-iphone-empty.webp';
 import toolFiles from './img/tool-files.webp';
 import toolImagine from './img/tool-imagine.webp';
 import toolTranslate from './img/tool-translate.webp';
@@ -20,7 +19,7 @@ import appIcon from './img/cs-app-icon.webp';
 import portrait from './img/cs-portrait.webp';
 
 export const img = {
-  logo, fullLogo, avatar, balloon1, balloon2, personVoice, personJoy, iphoneFrame,
+  logo, fullLogo, avatar, balloon1, balloon2, personVoice, personJoy,
   toolFiles, toolImagine, toolTranslate, toolVoice,
   stepAsk, stepUnderstand, stepAct, stepDone,
   phoneHand, appIcon, portrait,

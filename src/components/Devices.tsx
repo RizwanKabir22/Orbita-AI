@@ -3,10 +3,9 @@ import { Scaled } from './Scaled';
 import { DesktopApp } from '../screens/DesktopApp';
 import { PHONES, type PhoneKind } from '../screens/PhoneScreens';
 import { useInView, prefersReducedMotion } from '../lib/env';
-import { img } from '../assets';
 import s from './Devices.module.css';
 
-/** Live desktop app in a soft-black metal frame (hero). */
+/** Live desktop app in a soft-black outline (hero), paired with HeroPhone. */
 export function HeroDesktop() {
   return (
     <div className={s.deskFrame}>
@@ -113,7 +112,6 @@ export function HeroPhone() {
 
   return (
     <div ref={box} className={s.iphone}>
-      <div className={s.iphoneShadow} />
       <div className={s.iphoneScreen}>
         {ORDER.map((k, i) => {
           const Phone = PHONES[k];
@@ -133,8 +131,10 @@ export function HeroPhone() {
           );
         })}
         <div ref={glow} className={s.heroGlow} />
+        {/* Hardware stays put while the screens change underneath it. */}
+        <div className={s.island} />
+        <div className={s.homeBar} />
       </div>
-      <img src={img.iphoneFrame} alt="" className={s.iphoneFrame} decoding="async" />
       <div className={s.dots} aria-hidden="true">
         {ORDER.map((k, i) => <div key={k} className={`${s.dot} ${i === active ? s.dotOn : ''}`} />)}
       </div>

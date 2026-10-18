@@ -2,16 +2,6 @@ import { HeroDesktop, HeroPhone } from '../components/Devices';
 import { img } from '../assets';
 import s from './cs.module.css';
 
-export function TopBar() {
-  return (
-    <nav className={`${s.wrap} ${s.topbar}`}>
-      <img src={img.fullLogo} alt="Orbita AI" className={s.topLogo} />
-      <div className={s.byline}>Designed by <span>Rizwan Kabir Khan</span></div>
-      <div className={s.topMeta}><span className={s.gradDot} />Case study · 2026</div>
-    </nav>
-  );
-}
-
 export function Hero() {
   return (
     <section data-screen-label="01 Hero" className={`${s.wrap} ${s.hero}`}>

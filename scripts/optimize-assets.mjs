@@ -20,7 +20,6 @@ const jobs = [
   ['balloon-1.png', 1024, 80], ['balloon-2.png', 800, 80],
   ['person-voice-2.png', 800, 80], ['person-joy.png', 800, 80],
   ['avatar.png', 200, 82],
-  ['frame-iphone-empty.png', 658, 90],
 ];
 
 for (const [file, width, quality] of jobs) {

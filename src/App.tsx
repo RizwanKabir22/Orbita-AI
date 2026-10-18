@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, type RefObject } from 'react';
-import { TopBar, Hero } from './sections/Hero';
+import { Hero } from './sections/Hero';
 import { Brief, Marquee, Mockups, Challenge, Principles } from './sections/Story';
 import { MobileIntro, MobileFeatures, People } from './sections/Mobile';
 import { DesignSystem } from './sections/DesignSystem';
@@ -7,7 +7,7 @@ import { DarkMode, Flow, Closing } from './sections/Closing';
 import { prefersReducedMotion } from './lib/env';
 
 const DESIGN_W = 1440;
-const TOP_H = 98;
+const TOP_H = 0;
 
 /**
  * ≥1024px: the 1440px design is zoomed to the window (CSS `zoom`, so layout,
@@ -87,7 +87,6 @@ export function App() {
   useAmbient();
   return (
     <div ref={page} className="page">
-      <TopBar />
       <Hero />
       <Brief />
       <Marquee />
